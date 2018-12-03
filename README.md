@@ -41,16 +41,16 @@ ICE的主要工作就是在Agent L和Agent R之间，找到一条或者多条路
 与另外一个ICE实现库libnice相比，libnice依赖一个比较庞大的glib库，整个库显得比较重，编译安装非常麻烦，并且接口使用也不是很简洁。libice则主要参考了WebRtc的实现，只引入了小巧的libev作为网络事件库，整个库比较小巧，编译安装简单，接口使用也很方便, 同时代码量也不大，学习也比较简单。
 
 ### 相关RFC规范
-[RFC5245] ICE协议: https://tools.ietf.org/html/rfc5245
-[RFC5389] STUN协议: https://tools.ietf.org/html/rfc5389
-[RFC5766] TURN协议: https://tools.ietf.org/html/rfc5766
++ [RFC5245] ICE协议: https://tools.ietf.org/html/rfc5245
++ [RFC5389] STUN协议: https://tools.ietf.org/html/rfc5389
++ [RFC5766] TURN协议: https://tools.ietf.org/html/rfc5766
 
 ### 编译安装
 #### 编译工具
 本库的编译采用了buildmake工具，可以帮助你生成Makefile文件，buildmake是一个使用非常简单的编译环境构建工具，推荐使用。
 buildmake使用教程：https://github.com/str2num/buildmake
 
-####编译步骤
+#### 编译步骤
 ```shell
 # 在你的工作目录下，建立一个目录
 mkdir -p libice/str2num
@@ -80,10 +80,10 @@ make
 + 后续会持续跟进WebRtc项目的最新进展，同时该库也会相应的持续维护和更新。
 
 ### 示例
-+ 在项目的example目录，有一个示例demo，使用libice库实现了一个简单版的1v1消息聊天工具。
++ 在项目的example目录，有一个示例demo，使用libice库实现了一个简单版的1v1消息聊天软件。
 + 后续会提供一个1v1实时音视频通话的demo。
 
-### API文档
-该库的API文档，正在积极建设当中，敬请期待, 谢谢！
+### 使用文档
+该库的使用文档，正在积极建设当中，敬请期待, 谢谢！
 
 
