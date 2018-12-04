@@ -45,6 +45,12 @@ ICE的主要工作就是在Agent L和Agent R之间，找到一条或者多条路
 + [RFC5389] STUN协议: https://tools.ietf.org/html/rfc5389
 + [RFC5766] TURN协议: https://tools.ietf.org/html/rfc5766
 
+### 要求
++ 目前仅适用于Linux平台
++ gcc版本建议使用gcc-4.8.4及其更高版本, 该库使用了大量的c++11语法，gcc版本过低将无法编译通过
++ 依赖libev-4.22或者以上版本
++ openssl版本不低于1.0.0
+
 ### 编译安装
 #### 编译工具
 本库的编译采用了buildmake工具，可以帮助你生成Makefile文件，buildmake是一个使用非常简单的编译环境构建工具，推荐使用。
@@ -66,7 +72,9 @@ vim BUILDMAKE
 BUILDMAKE_BIN_PATH('~/opensource/buildmake/buildmake') # 该选项路径务必修改为你自己机器上的buildmake工具执行路径
 
 # 执行buildmake命令
-buildmake -UB # libice库依赖另外一个git项目librtcbase，-U选项可以帮助你获取librtcbase库 -B表示执行编译
+# libice库依赖另外一个git项目librtcbase，-U选项可以帮助你获取librtcbase库 -B表示执行编译
+# 需要注意的是：librtcbase依赖libev, librtcbase在编译过程遇到问题，请参考https://github.com/str2num/librtcbase
+buildmake -UB 
 
 # 执行make, make成功之后会在项目根目录生成一个output，output目录包含libice的库文件
 make
@@ -83,7 +91,7 @@ make
 + 在项目的example目录，有一个示例demo，使用libice库实现了一个简单版的1v1消息聊天软件。
 + 后续会提供一个1v1实时音视频通话的demo。
 
-### 使用文档
-该库的使用文档，正在积极建设当中，敬请期待, 谢谢！
+### 帮助文档
+该库的帮助文档，正在积极建设当中，敬请期待, 谢谢！
 
 
