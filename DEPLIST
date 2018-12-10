@@ -1,7 +1,0 @@
-#edit-mode: -*- python -*-
-#coding:utf8 
-
-#工作路径.
-WORKROOT('../../')
-
-DEP_CONFIGS('voip/librtcbase')
