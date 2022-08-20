@@ -3,8 +3,8 @@ libice是一个c/c++类库，它实现了RFC5245规范定义的交互式连接�
 
 ### 学习资源
 如果对RTC技术比较感兴趣，推荐学习：
-基于WebRTC的大型分布式实时音视频系统XRTC系统项目实战，地址：https://ke.qq.com/course/package/58434
-免费课程：Web端屏幕共享技术实现，地址：https://ke.qq.com/course/5421850
+- WebRTC实战：手把手实现大型分布式实时音视频XRTC系统，地址：https://ke.qq.com/course/5506373#term_id=105694443
+- 免费课程：Web端屏幕共享技术实现，地址：https://ke.qq.com/course/5421850
 
 
 ### 示例Demo
