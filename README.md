@@ -6,9 +6,8 @@ libice是一个c/c++类库，它实现了RFC5245规范定义的交互式连接�
 - WebRTC实战：手把手实现大型分布式实时音视频XRTC系统，地址：https://ke.qq.com/course/5506373#term_id=105694443
 - 免费课程：Web端屏幕共享技术实现，地址：https://ke.qq.com/course/5421850
 
-
-### 示例Demo
-使用libice开发的一个1v1音视频实时通话示例demo: https://www.str2num.com/demos/videochat
+### 应用案例
+使用libice开发的低延迟直播系统，在线体验: https://www.str2num.com/xrtchome/xrtcclient/pushcam
 
 ### ICE(Interactive Connectivity Establishment)简介
 RFC5245规范将ICE定义为: 一种通过offer/answer模型建立的UDP(尽管可以扩展到其它的协议，比如TCP)媒体流的NAT穿越技术。ICE是offer/answer模型的扩展，它通过在SDP的offer和answer中包含多个IP地址和端口，然后对这些IP地址和端口进行点到点的连通性检查来进行工作。SDP中包含的IP地址和端口以及进行连通性检查将使用修订的STUN规范，这个规范定义在RFC5389当中，并重命名为Session Traversal Utilities for NAT。新名称和新规范反映了STUN只是用于其它NAT穿越技术(ICE)的一个工具，而不是原来的STUN规范定义的作为一个独立的NAT穿越解决方案。ICE也使用NAT中继穿越TURN，该规范定义在RFC5766，它是STUN的扩展。由于ICE为每个媒体流交换了多个IP地址和端口，因此它允许为多宿主和双栈主机选择地址，并且不赞成使用RFC4091和RFC4092。
